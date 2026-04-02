@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<video autoplay muted loop class="bg-video">
+  <source src="video/bg.mp4" type="video/mp4">
+</video>
+
+<video autoplay muted loop playsinline class="bg-video"></video>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Portofolio</div>
+  <nav>
+    <a href="#" id="home-btn">Home</a>
+    <a href="#" id="about-btn">About Me</a>
+    <a href="#" id="works-btn">Works</a>
+  </nav>
+</header>
+
+<!-- SOCIAL -->
+<div class="social">
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+
+
+    <!-- ABOUT (HIDDEN) -->
+<div class="hero-about" id="about-content">
+  <div class="about-box">
+    <p>
+      Hi, Im Zero Power—an anime illustrator and modern designer 
+      with over 3 years of experience bringing ideas to life through visual art.
+    </p>
+    <p>
+      My work focuses on creating expressive anime-style illustrations combined with clean, modern design aesthetics. I enjoy blending detailed character art with contemporary layouts, resulting in visuals that feel both dynamic and professional.
+    </p>
+    <p>Over the past few years, I ve developed a strong sense of consistency, trust, and quality in every project I handle. Whether it s character design, digital illustration, or visual branding, I aim to deliver artwork that not only looks good but also tells a story.</p>
+
+  </div>
+</div>
+
+  <!-- TEXT -->
+  <div class="hero-text" id="text-content">
+    <h1>Zero Power</h1>
+    <p>Anime Illustrator / Designer</p>
+
+    <div class="info">
+      <span>3+ years experience</span>
+      <span>Trustworthy</span>
+      <span>Modern design</span>
+    </div>
+  </div>
+
+  <!-- GALLERY (HIDDEN) -->
+  <div class="hero-gallery" id="gallery-content">
+    <div class="grid">
+      <img src="images/art1.jpg">
+      <img src="images/art2.jpg">
+      <img src="images/art3.jpg">
+      <img src="images/art4.jpg">
+      <img src="images/art5.jpg">
+      <img src="images/art6.jpg">
+      <img src="images/art7.jpg">
+      <img src="images/art8.jpg">
+      <img src="images/art9.jpg">
+    </div>
+  </div>
+
+</section>
+
+<audio id="bg-music" loop>
+    <source src="music/music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let music = document.getElementById("bg-music");
+
+document.addEventListener("click", function () {
+    music.play();
+}, { once: true });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
